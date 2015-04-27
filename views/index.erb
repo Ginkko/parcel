@@ -1,24 +1,35 @@
-<h1 class="title">Please fill in the following info about your parcel</h1>
+<h1 class="title text-center">Please fill in the following info about your parcel</h1>
 
 <form action="/cost_to_ship">
   <div class="form-group">
-    <label for="length" class="label-text">Enter length of Parcel (in):</label>
-    <input type="text" id="length" name="length" class="form-control">
+    <div class="row">
+      <div class ="col-sm-4">
+        <label for="length" class="label-text">Enter length of Parcel (in):</label>
+        <input type="text" id="length" name="length" class="form-control">
+      </div>
+      <div class="col-sm-4">
+        <label for="width" class="label-text">Enter width of Parcel (in):</label>
+        <input type="text" id="width" name="width" class="form-control">
+      </div>
+      <div class="col-sm-4">
+        <label for="height" class="label-text">Enter Height of Parcel (in):</label>
+        <input type="text" id="height" name="height" class="form-control">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <label for="weight" class="label-text">Enter Weight of Parcel (lb):</label>
+        <input type="text" id="weight" name="weight" class="form-control">
+      </div>
+      <div class="col-sm-6">
+        <label for="distance" class="label-text">
+          Enter the distance your parcel will travel (mi):
+        </label>
+        <input type="text" id="distance" name="distance" class="form-control">
+      </div>
+    </div>
 
-    <label for="width" class="label-text">Enter width of Parcel (in):</label>
-    <input type="text" id="width" name="width" class="form-control">
-
-    <label for="height" class="label-text">Enter Height of Parcel (in):</label>
-    <input type="text" id="height" name="height" class="form-control">
-
-    <label for="weight" class="label-text">Enter Weight of Parcel (lb):</label>
-    <input type="text" id="weight" name="weight" class="form-control">
-
-    <label for="distance" class="label-text">
-      Enter the distance your parcel will travel (mi):
-    </label>
-    <input type="text" id="distance" name="distance" class="form-control">
-
+<div class="dropdown">
     <label for="speed" class="label-text">Shipping Speed:</label>
     <select id="speed" name="speed" type="number">
       <option value=1>Standard</option>
@@ -26,5 +37,7 @@
       <option value=3>Overnight</option>
     </select>
   </div>
+</div>
   <button class="btn btn-danger" type="submit">Calculate!</button>
+
 </form>
