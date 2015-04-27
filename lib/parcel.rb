@@ -10,8 +10,8 @@ class Parcel
     @length.*(@width).*(@height)
   end
 
-  def cost_to_ship
-    volume().*(@weight)
+  def cost_to_ship(distance)
+    volume().*(@weight).*(distance)./100
   end
 
 
