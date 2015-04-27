@@ -7,4 +7,6 @@ Erin Collins and Alec Arme
 
 Bundle to install all gems
 
+Running live on Heroku: https://immense-thicket-4501.herokuapp.com/
+
 MIT License
