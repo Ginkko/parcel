@@ -9,4 +9,10 @@ class Parcel
   def volume
     @length.*(@width).*(@height)
   end
+
+  def cost_to_ship
+    volume().*(@weight)
+  end
+
+
 end
